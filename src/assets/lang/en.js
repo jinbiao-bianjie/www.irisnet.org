@@ -1,6 +1,8 @@
 export const message = {
     logo:'irisnet.png',
-    
+    floatWindow:{
+        title:'FORUM',
+    },
     header:{
         left:[
             {
@@ -15,7 +17,7 @@ export const message = {
             },
             {
                 id:2,
-                title:'Contact',
+                title:'Community',
                 active:false,
             }
         ],
@@ -34,6 +36,12 @@ export const message = {
             },
             {
                 id:2,
+                title:'Forum',
+                href:'https://forum.irisnet.org/',
+                active: false,
+            },
+            {
+                id:3,
                 title:'Blog',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -72,7 +80,7 @@ export const message = {
             },
             {
                 id:5,
-                title:'Contact',
+                title:'Community',
                 activeIndex: 2,
                 active:false,
             },
@@ -86,6 +94,12 @@ export const message = {
             },
             {
                 id:1,
+                title:'Forum',
+                href: "https://forum.irisnet.org/",
+                activeIndex: '',
+            },
+            {
+                id:2,
                 title:'Blog',
                 href: "https://medium.com/irisnet-blog",
                 activeIndex: '',
@@ -93,8 +107,9 @@ export const message = {
         ]
     },
     footer:{
-        socialCommunityTitle: 'Social Community',
-        TechCommunityTitle: 'Tech Community',
+        socialCommunityTitle: 'Community',
+        validatorCommunityTitle:'Validators',
+        TechCommunityTitle: 'Developers',
         socialCommunity:[
             {
                 id:0,
@@ -126,10 +141,17 @@ export const message = {
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
+        ],
+        validatorCommunity:[
             {
-                id:6,
+                id:0,
+                src: "irisnet_qq.png",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id:1,
                 src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#iris:matrix.org"
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
         ],
         techCommunity:[
@@ -140,15 +162,15 @@ export const message = {
             },
             {
                 id:1,
-                src: "irisnet_riot.png",
-                "txt": "riot",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                src: "irisnet_qq.png",
+                "txt": "qq",
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
-                src: "irisnet_qq.png",
-                "txt": "qq",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+                src: "irisnet_riot.png",
+                "txt": "riot",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
         productList: [
@@ -210,8 +232,7 @@ export const message = {
     home: {
         sectionOne: {
             title: 'IRIS Network',
-            time: '2019.03.01 Betanet Launched',
-            huoBiTime: '2019.04.08 Listed on Huobi Global',
+            time: '2019.03.01 Launched',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetwork',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -288,7 +309,6 @@ export const message = {
                     {id:3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
                     {id:4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
                     {id:5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
-                    {id:6, path: 'logos/irisnet_ba.png', url: 'javascript:void(0)'},
                     {id:7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
                     {id:8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
                     {id:9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
@@ -314,6 +334,7 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                    {id:32, path: 'logos/irisnet_snz.png', url: 'http://snzholding.com/'},
                 ]
             }
         }
@@ -373,15 +394,15 @@ export const message = {
                 id:'1',
                 src:'irisnet_community_riot.png',
                 name: 'Riot room',
-                linkName:'#irisvalidators:matrix.org',
+                linkName:'#iris:matrix.org',
                 href: 'https://riot.im/app/#/room/#iris:matrix.org'
             },
             {
                 id:'2',
                 src:'irisnet_community_qq.png',
                 name: 'QQ group',
-                linkName:'834063323',
-                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
+                linkName:'795301695',
+                href: 'https://jq.qq.com/?_wv=1027&k=51eKP77'
             }
         ]
     },

@@ -27,8 +27,16 @@
                         </span>
                         </div>
                     </a>
+                    <a :href="$store.state.messages.testnetPage.explorerHref" target="_blank">
+                        <div class="fqa_block">
+                            <span class="faq_title">{{$store.state.messages.testnetPage.explorerTitle}}</span>
+                            <span class="faq_img">
+                            <img src="../../public/irisnet/IRISnet_explorer.png" alt="">
+                        </span>
+                        </div>
+                    </a>
                 </div>
-                <div class="explorer_rainbow_link_content">
+               <!-- <div class="explorer_rainbow_link_content">
                     <a :href="$store.state.messages.testnetPage.explorerHref" target="_blank">
                         <div class="explorer_content">
                             <span class="explorer_title">{{$store.state.messages.testnetPage.explorerTitle}}</span>
@@ -37,15 +45,7 @@
                         </span>
                         </div>
                     </a>
-                    <a :href="$store.state.messages.testnetPage.walletHref" target="_blank">
-                        <div class="rainbow_content">
-                            <span class="rainbow_title">{{$store.state.messages.testnetPage.walletTitle}}</span>
-                            <span class="rainbow_img">
-                            <img src="../../public/irisnet/IRISnet_rainbow.png" alt="">
-                        </span>
-                        </div>
-                    </a>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
